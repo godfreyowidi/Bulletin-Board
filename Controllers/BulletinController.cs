@@ -125,5 +125,25 @@ namespace HalmakTechnologies.BulletinBoard
       }
       return RedirectToAction("Index");
     }
+
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
+
+      using(NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+      {
+        connection.Open();
+
+        using (NpgsqlCommand command = new NpgsqlCommand())
+        {
+          command.CommandText = "Delete From Bulletin Where BulletinID='{id}'";
+
+          command.ExecuteNonQuery();
+          connection.Close();
+        }
+      }
+      return RedirectToAction("Index");
+    }
   }
 }
