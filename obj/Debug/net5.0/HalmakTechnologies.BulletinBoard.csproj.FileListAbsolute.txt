@@ -22,3 +22,5 @@ C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\obj\Debug\net5.0\HalmakT
 C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\obj\Debug\net5.0\ref\HalmakTechnologies.BulletinBoard.dll
 C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\obj\Debug\net5.0\HalmakTechnologies.BulletinBoard.pdb
 C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\obj\Debug\net5.0\HalmakTechnologies.BulletinBoard.genruntimeconfig.cache
+C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\bin\Debug\net5.0\Npgsql.dll
+C:\Users\Admin\Desktop\HalmakTechnologies.BulletinBoard\obj\Debug\net5.0\HalmakTechnologies.BulletinBoard.csproj.CopyComplete
