@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@using HanmakTechnologies.BulletinBoard.Models;
+@model IEnumerable<HanmakTechnologies.BulletinBoard.Models.Bulletin>;
+
+<h1>Welcome to Hanmak Technologies Bulletin Board</h1>
+
+@if (@Model.Any())
+{
+  <ul>
+    @foreach (Bulletin bulletin in Model)
+    {
+        <li>
+          @Html.ActionLink($"{bulletin.Subject}", "Details", new { id = bulletin.BulletinID })
+        </li>
+    }
+  </ul>
+}
+else
+{
+  <h5>No bulletins have been added today!</h5>
+}
+
+<p>@Html.ActionLink("Create new bulletin", "Create")</p>

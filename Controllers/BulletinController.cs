@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
+using HanmakTechnologies.BulletinBoard.Models;
 
 namespace HanmakTechnologies.BulletinBoard
 {

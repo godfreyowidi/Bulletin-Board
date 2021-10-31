@@ -1,13 +1,13 @@
 
 using System.Collections.Generic;
 
-namespace HanmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard.Models
 {
   public class Category
   {
     public Category()
     {
-      this.Bulletins = new HashSet<Bulletin>();
+      //this.jointEntitis = new HashSet<CategoryBulletin>();
     }
     public int CategoryID { get; set; }
 
@@ -21,7 +21,7 @@ namespace HanmakTechnologies.BulletinBoard
             }
         }
 
-    public virtual ICollection<Bulletin> Bulletins { get; set; }
+    //public virtual ICollection<BulletinCategory> JointEntities { get; set; }
 
   }
 }
