@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HalmakTechnologies.BulletinBoard": {
+    "HanmakTechnologies.BulletinBoard": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

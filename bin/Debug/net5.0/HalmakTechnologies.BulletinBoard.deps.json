@@ -23,7 +23,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "HalmakTechnologies.BulletinBoard/1.0.0": {
+      "HanmakTechnologies.BulletinBoard/1.0.0": {
         "dependencies": {
           "Npgsql": "5.0.10",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -311,10 +311,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "HalmakTechnologies.BulletinBoard.dll": {}
+          "HanmakTechnologies.BulletinBoard.dll": {}
         },
         "compile": {
-          "HalmakTechnologies.BulletinBoard.dll": {}
+          "HanmakTechnologies.BulletinBoard.dll": {}
         }
       },
       "Npgsql/5.0.10": {
@@ -2033,7 +2033,7 @@
     }
   },
   "libraries": {
-    "HalmakTechnologies.BulletinBoard/1.0.0": {
+    "HanmakTechnologies.BulletinBoard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
-namespace HalmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard
 {
   public class HomeController : Controller
   {

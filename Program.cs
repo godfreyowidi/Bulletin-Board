@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace HalmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard
 {
     public class Program
     {

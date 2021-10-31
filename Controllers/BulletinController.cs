@@ -1,11 +1,10 @@
-
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 
-namespace HalmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard
 {
   public class BulletinController : Controller
   {
@@ -117,7 +116,7 @@ namespace HalmakTechnologies.BulletinBoard
 
         using (NpgsqlCommand command = new NpgsqlCommand())
         {
-          command.CommandText = "Edit Bulletin SET Subject='{bulletin.Subject}', Description='{bulletin.Description}' Where Id='{id}'";
+          command.CommandText = "UPDATE Bulletin SET Subject='{bulletin.Subject}', Description='{bulletin.Description}' Where Id='{id}'";
 
           command.ExecuteNonQuery();
           connection.Close();

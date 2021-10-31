@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\HalmakTechnologies.BulletinBoard.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\HanmakTechnologies.BulletinBoard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\HalmakTechnologies.BulletinBoard.csproj": {
+    "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\HanmakTechnologies.BulletinBoard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\HalmakTechnologies.BulletinBoard.csproj",
-        "projectName": "HalmakTechnologies.BulletinBoard",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\HalmakTechnologies.BulletinBoard.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\HanmakTechnologies.BulletinBoard.csproj",
+        "projectName": "HanmakTechnologies.BulletinBoard",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\HanmakTechnologies.BulletinBoard.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

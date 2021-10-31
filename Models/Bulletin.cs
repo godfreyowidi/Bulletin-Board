@@ -1,7 +1,7 @@
 
 using System;
 
-namespace HalmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard
 {
   public class Bulletin
   {

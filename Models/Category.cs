@@ -1,7 +1,7 @@
 
 using System.Collections.Generic;
 
-namespace HalmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard
 {
   public class Category
   {

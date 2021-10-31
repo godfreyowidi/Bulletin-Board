@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "pem2WYpqo6gBuEgrwyHeSuP2THld8xL/5QGWc+vNIeaoDIbCXYcZ4a75895SA+iOH1pgUwndPUub6oFQ9wDMpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\HalmakTechnologies.BulletinBoard\\HalmakTechnologies.BulletinBoard.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\HanmakTechnologies.BulletinBoard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
