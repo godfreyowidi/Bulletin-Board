@@ -15617,6 +15617,22 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "HanmakTechnologies.BulletinBoard",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Bulletins\\Create.cshtml",
+      "TargetPath": "Views\\Bulletins\\Create.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
