@@ -7,7 +7,7 @@
 
 <h1>Welcome to Hanmak Technologies Bulletin Board</h1>
 
-@if (@Model.Any())
+@if (@Model != null)
 {
   <ul>
     @foreach (Bulletin bulletin in Model)

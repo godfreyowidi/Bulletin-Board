@@ -1,4 +1,6 @@
 
+using System.Collections.Generic;
+using HanmakTechnologies.BulletinBoard.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
@@ -13,7 +15,8 @@ namespace HanmakTechnologies.BulletinBoard
         }
         public IActionResult Index()
         {
-            return View();
+          var bulletins = new List<Bulletin>();
+            return View(bulletins);
         }
   }
 }
