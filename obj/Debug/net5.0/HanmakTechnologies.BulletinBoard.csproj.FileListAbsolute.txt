@@ -12,7 +12,6 @@ C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\scopedc
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.TagHelpers.input.cache
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.TagHelpers.output.cache
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.RazorCoreGenerate.cache
-C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Bulletins\Create.cshtml.g.cs
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.RazorTargetAssemblyInfo.cache
@@ -36,3 +35,4 @@ C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\Npgsql.
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.Views.pdb
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.csproj.CopyComplete
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.genruntimeconfig.cache
+C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Home\Create.cshtml.g.cs
