@@ -1,53 +1,37 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Npgsql;
-using HanmakTechnologies.BulletinBoard.Models;
+using HanmakTechnologies.BulletinBoard.ViewModels;
 
-namespace HanmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard.Controllers
 {
-  public class HomeController : Controller
-  {
-    public IConfiguration Configuration { get; }
-    public HomeController(IConfiguration configuration) 
+    public class HomeController : Controller
     {
-      Configuration = configuration;
-    }
-
-    public IActionResult Index()
-    {
-      List<Bulletin> bulletinList = new List<Bulletin>();
-
-      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-      using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-      {
-        connection.Open();
-
-        using (NpgsqlCommand command = new NpgsqlCommand())
+        public IActionResult Index()
         {
-          command.CommandText = "Select * From Bulletin";
-          using(NpgsqlDataReader reader = command.ExecuteReader())
-          {
-            while(reader.Read())
-            {
-              Bulletin bulletin = new Bulletin();
-              bulletin.BulletinID = Convert.ToInt32(reader["BulletinID"]);
-              bulletin.Subject = Convert.ToString(reader["Subject"]);
-              bulletin.Description = Convert.ToString(reader["Description"]);
-              bulletin.TimeStamp = Convert.ToDateTime(reader["TimeStamp"]);
-              bulletin.DateCreated = Convert.ToDateTime(reader["DateCreated"]);
-              //string subject = reader.GetString(reader.GetOrdinal("Subject"));
-              //string description = reader.GetString(reader.GetOrdinal("Description"));
-
-              bulletinList.Add(bulletin);
-            }
-          }
+            return View();
         }
-        connection.Close();
-      }
-      return View(bulletinList);
-    }
-  }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
 }

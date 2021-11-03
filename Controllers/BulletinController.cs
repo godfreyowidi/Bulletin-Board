@@ -1,114 +1,113 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Npgsql;
 using HanmakTechnologies.BulletinBoard.Models;
+using System.Linq;
 
-namespace HanmakTechnologies.BulletinBoard
+namespace HanmakTechnologies.BulletinBoard.Controllers
 {
   public class BulletinController : Controller
   {
-    public IConfiguration Configuration { get; }
-    public BulletinController(IConfiguration configuration) 
+
+    DataAccessLayer bulletinObj = new DataAccessLayer();
+
+    // GET: /controller/
+
+    public IActionResult Index()
     {
-      Configuration = configuration;
+      List<Bulletin> bulletinList = new List<Bulletin>();
+      bulletinList = bulletinObj.GetAllBulletin().ToList();
+
+      return View(bulletinList);
     }
+
+    [HttpGet]
+    public IActionResult Details(int? id)
+    {
+      if (id == null)
+      {
+        return NotFound();
+      }
+      Bulletin bulletin = bulletinObj.GetBulletinData(id);
+
+      if (bulletin == null)
+      {
+        return NotFound();
+      }
+      return View(bulletin);
+    }
+
+    [HttpGet]
+    public IActionResult Delete(int? id)
+    {
+      if (id == null)
+      {
+        return NotFound();
+      }
+      Bulletin bulletin = bulletinObj.GetBulletinData(id);
+
+      if (bulletin == null)
+      {
+        return NotFound();
+      }
+      return View(bulletin);
+    }
+
+    [HttpPost, ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteConfirmed(int? id)
+    {
+      bulletinObj.DeleteBulletin(id);
+      return RedirectToAction("Index");
+    }
+
+    [HttpGet]
+    public IActionResult Edit(int? id)
+    {
+      if (id == null)
+      {
+        return NotFound();
+      }
+      Bulletin bulletin = bulletinObj.GetBulletinData(id);
+
+      if (bulletin == null)
+      {
+        return NotFound();
+      }
+      return View(bulletin);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Edit(int id, [Bind]Bulletin bulletin)
+    {
+      if (id != bulletin.Id)
+      {
+        return NotFound();
+      }
+      if (ModelState.IsValid)
+      {
+        bulletinObj.EditBulletin(bulletin);
+        return RedirectToAction("Index");
+      }
+      return View(bulletin);
+    }
+
+    [HttpGet]
     public IActionResult Create()
     {
       return View();
     }
-
     [HttpPost]
-    public IActionResult Create(Bulletin bulletin)
+    [ValidateAntiForgeryToken]
+    public IActionResult Create([Bind] Bulletin bulletin)
     {
-      
-      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-      using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+      if (ModelState.IsValid)
       {
-
-        connection.Open();
-        
-        using (NpgsqlCommand command = new NpgsqlCommand())
-        {
-          command.CommandText = "insert into bulletin (Subject, Desccription) VALUES (@subject, @description)";
-          command.Parameters.AddWithValue("@subject");
-          command.Parameters.AddWithValue("Description");
-
-          var newID = (int)command.ExecuteScalar();
-        }
+        bulletinObj.AddBulletin(bulletin);
+        return RedirectToAction("Index");
       }
-      return View();
-    }
-    
-    public IActionResult Edit(int id)
-    {
-      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-
-      Bulletin bulletin = new Bulletin();
-      using(NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-      {
-        connection.Open();
-        using (NpgsqlCommand command = new NpgsqlCommand())
-        {
-          command.CommandText = "Select * From Bulletin Where BulletID='{id}'";
-
-          using(NpgsqlDataReader reader = command.ExecuteReader())
-          {
-            while(reader.Read())
-            {
-              //Bulletin bulletin = new Bulletin();
-              bulletin.BulletinID = Convert.ToInt32(reader["BulletinID"]);
-              bulletin.Subject = Convert.ToString(reader["Subject"]);
-              bulletin.Description = Convert.ToString(reader["Description"]);
-              bulletin.TimeStamp = Convert.ToDateTime(reader["TimeStamp"]);
-              bulletin.DateCreated = Convert.ToDateTime(reader["DateCreated"]);
-            }
-          }
-          connection.Close();
-        }
-        return View(bulletin);
-      }  
-    }
-
-    [HttpPost]
-    public IActionResult Edit(Bulletin bulletin, int id)
-    {
-      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-
-      using(NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-      {
-        connection.Open();
-
-        using (NpgsqlCommand command = new NpgsqlCommand())
-        {
-          command.CommandText = "UPDATE Bulletin SET Subject='{bulletin.Subject}', Description='{bulletin.Description}' Where Id='{id}'";
-
-          command.ExecuteNonQuery();
-          connection.Close();
-        }
-      }
-      return RedirectToAction("Index");
-    }
-
-    [HttpPost]
-    public IActionResult Delete(int id)
-    {
-      string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
-
-      using(NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-      {
-        connection.Open();
-
-        using (NpgsqlCommand command = new NpgsqlCommand())
-        {
-          command.CommandText = "Delete From Bulletin Where BulletinID='{id}'";
-
-          command.ExecuteNonQuery();
-          connection.Close();
-        }
-      }
-      return RedirectToAction("Index");
+      return View(bulletin);
     }
   }
 }

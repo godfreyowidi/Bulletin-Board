@@ -15619,18 +15619,23 @@
   "RootNamespace": "HanmakTechnologies.BulletinBoard",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Home\\Create.cshtml",
-      "TargetPath": "Views\\Home\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Bulletin\\Create.cshtml",
+      "TargetPath": "Views\\Bulletin\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\HanmakTechnologies.BulletinBoard\\Views\\Bulletin\\Index.cshtml",
+      "TargetPath": "Views\\Bulletin\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

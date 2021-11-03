@@ -21,7 +21,6 @@ C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\ref\Han
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.pdb
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\global.json
-C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\appsettings.json
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\HanmakTechnologies.BulletinBoard.exe
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\HanmakTechnologies.BulletinBoard.deps.json
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\HanmakTechnologies.BulletinBoard.runtimeconfig.json
@@ -35,4 +34,5 @@ C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\bin\Debug\net5.0\Npgsql.
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.Views.pdb
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.csproj.CopyComplete
 C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\HanmakTechnologies.BulletinBoard.genruntimeconfig.cache
-C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Bulletin\Create.cshtml.g.cs
+C:\Users\Admin\Desktop\HanmakTechnologies.BulletinBoard\obj\Debug\net5.0\Razor\Views\Bulletin\Index.cshtml.g.cs

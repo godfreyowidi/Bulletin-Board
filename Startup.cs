@@ -13,21 +13,16 @@ namespace HanmakTechnologies.BulletinBoard
 {
     public class Startup
     {
-        public Startup(IWebHostEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json");
-            Configuration = builder.Build();
+            Configuration = configuration;
         }
-        public IConfigurationRoot Configuration { get; set; }
+        public IConfiguration Configuration { get; }
         
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.AddControllersWithViews();
-            
-            services.AddSingleton<IConfiguration>(Configuration);
         }
 
         public void Configure(IApplicationBuilder app)
